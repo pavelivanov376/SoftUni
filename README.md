@@ -1,3 +1,3 @@
 # SoftUni Projects:
 
- - Custom ORM
+ - IntroJDBC - A Custom ORM, which uses JDBC.
