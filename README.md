@@ -4,3 +4,4 @@
  - IntroHibernate - Testing basic Hibernate features.
  - IntroSpring - Introduction to Spring Data: @Entity, @Repository, @Service
  - SpringAdvancedQuerying - @Query, @Joing, Relations
+ - WebApp - Intro to Spring Web
