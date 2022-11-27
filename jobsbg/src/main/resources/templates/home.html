@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+    <style>
+table, th, td {
+  border:2px solid black;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <th:block th:include="~{fragments/nav-bar}"></th:block>
+</header>
+<main>
+    <div class="jumbotron">
+
+        <span style="visibility: hidden">....</span>
+        <h2 class="text-black display-3 mt-5 display-3">
+            List of open positions:
+        </h2>
+
+        <table style="width:100%">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Requirements</th>
+                <th>Salary</th>
+            </tr>
+            <tr th:each="job: ${jobs}">
+                <td th:text="${job.title}" />
+                <td th:text="${job.description}" />
+                <td th:text="${job.requirements}" />
+                <td th:text="${job.salary}" />
+            </tr>
+
+        </table>
+    </div>
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>
